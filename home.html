@@ -23,6 +23,8 @@
     color: #ffffff;
     position: relative;
     top: 45px;
+    text-transform: uppercase;
+    font-weight: 100;
   }
   h1 {
     font-size: 48px;
@@ -92,13 +94,32 @@
   #tickets, #location {
     text-align:center;
   }
-row:after {
-  clear:both;
-  content: "";
-  display: block;
-}
-
+  row:after {
+    clear:both;
+    content: "";
+    display: block;
   }
+  @media (max-width: 654px) {
+    header nav {
+      display: none;
+    }
+    .jumbotron {
+      top: 0;
+      height: 300px;
+      margin-bottom: 0;
+    }
+    .logo {
+      top: 90px;
+    }
+    header h1 {
+      font-size: 40px;
+      top: 50px;
+    }
+    header h2 {
+      font-size: 20px;
+      top: 30px;
+    }
+}
 </style>
 </head>
 <body>

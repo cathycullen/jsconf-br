@@ -1,1 +1,368 @@
 @import url("whitespace-reset.css");
+
+  body {
+    font: normal 13px 'Open Sans', Arial, sans-serif;
+    color: #444;
+  }
+  a [href]{
+   color: #008000;
+   font-weight: bold;
+    text-decoration: none;
+  }
+  a [href]:hover {
+    text-decoration: underline;
+  }
+  a {
+   color: #008000;
+   font-weight: bold;
+    text-decoration: none;
+  }
+  header h1 {
+    font-size: 72px;
+    color: #ffffff;
+    position: relative;
+    top: 80px;
+  }
+  header h2 {
+    font-size: 30px;
+    color: #ffffff;
+    position: relative;
+    top: 45px;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  footer h2 {
+    font-size: 31px;
+    font-weight: 600;
+    text-transform: uppercase;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 48px;
+    margin: 1.236em 0 .618em;
+    font-size: 48px;
+    font-weight: 100;
+    text-align: center;
+  }
+  h3 {
+    margin: 30px 0 4px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  main section {
+    margin: 0 30px;
+    padding-bottom: 60px;
+    border-top: 1px solid #efefef;
+  }
+  #location {
+  }
+#tickets {
+  padding-bottom: 77px;
+}
+  section p, .container {
+    margin: 0 auto 17px;
+    max-width: 960px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+  main section p {
+    color: #444;
+  }
+
+  li {
+    display: inline-block;
+  }
+  header nav {
+    position: fixed;
+    background: #FFF;
+    border-top: 10px solid #F5F5F5;
+    border-bottom: 1px solid #EEE;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+  header nav ul {
+    margin: 0 auto;
+  }
+  header nav ul li {
+    list-style: none;
+    margin: 0 25px;
+  }
+  header nav ul li a {
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 44px;
+    text-decoration: none;
+    color: #444;
+    font-weight: normal;
+  }
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .jumbotron {
+    position: relative;
+      top: 55px;
+      margin-bottom: 55px;
+      height: 428px;
+      text-align: center;
+      background: url(images/front.jpg) center no-repeat;
+  }
+  .logo {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 150px;
+    display: block;
+  }
+.green-button {
+    padding: 10px 30px;
+    color: #ffffff;
+    background: #008000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .green-button:hover {
+    text-decoration: none;
+    background: #006000;
+  }
+
+  .tags {
+    padding: 1px 4px;
+    font-size: 7px;
+    background: #EEE;
+    border: 1px solid #AAA;
+    display: inline-block;
+  }
+  #tickets{
+    text-align:center;
+  }
+  row:after {
+    clear:both;
+    content: "";
+    display: block;
+  }
+  footer {
+     background: #000000 url("images/people.jpg") no-repeat center 25%;
+     color: #ffffff;
+     width: 100%;
+     padding-bottom: 8px;
+  }
+  footer section {
+    margin: 0
+    padding: 0;
+    border: none;
+  }
+  footer h1 {
+    padding-top: 20px;
+    margin: 0 0 40px;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4),0 0 30px rgba(0,0,0,.075)
+  }
+
+  footer article {
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+    color:  #ffffff;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  footer p {
+    color: #ffffff;
+  }
+  .gold img, .silver img, .support img {
+    margin-right: 40px;
+  }
+  .gold img {
+    width: 300px;
+  }
+  .silver img {
+    width: 240px;
+  }
+  .support img {
+    width: 180px;
+  }
+  .speaker {
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 35px;
+    border-style:solid;
+    border-width: thin;
+    border: 1px solid #e8e8e8;
+    vertical-align: top;
+    margin: 5px;
+    width: 280px;
+    height: 345px;
+    background: #fff;
+  }
+  .speaker img {
+    display: block;
+  }
+  .speaker p {
+    padding: 0 10px;
+  }
+
+  .speaker a:hover #papers a:hover{
+    text-decoration: underline;
+  }
+
+#schedule .hour, #schedule .event, #schedule h2, #speakers h2{
+    font-size: 24px;
+    font-weight: normal;
+  }
+  #schedule table {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  #speakers h2 {
+    margin-top: 34px;
+    margin-bottom: 4px;
+     color: #008000;
+     font-weight: bold;
+  }
+  #schedule h2 {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  #schedule img {
+    width: 130px;
+  }
+  #schedule td {
+    border-top: 1px solid #EFEFEF;
+    padding: 10px;
+  }
+  #schedule table  {
+    border-bottom: 1px solid #EFEFEF;
+  }
+  #schedule h3 {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 8px 0 0;
+  }
+  #schedule a {
+    color: #008000;
+    text-decoration: none;
+  }
+  #schedule a:hover, #papers a:hover{
+    text-decoration: underline;
+  }
+  .speaker-p2 {
+    display: none;
+    color: #ffffff;
+  }
+
+  .speaker a:hover .speaker a{
+    text-decoration: underline;
+  }
+
+  .speaker:hover {
+    background-color: #191919;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 18px;
+    padding-bottom: 0;
+    height: 378px;
+  }
+  .speaker:hover .speaker-img, .speaker:hover .speaker-p1 {
+    display: none;
+  }
+  .speaker:hover .speaker-p2 {
+    color: white;
+    font-size: 13px;
+    margin: 10px;
+    display:block;
+    padding: 10px 10px 0 10px;
+    line-height: 15px;
+    margin-top: 2px;
+  }
+  #speakers .speaker:hover h2 {
+      font-size:24px;
+      margin-top: 24px;
+      margin-bottom: 0;
+  }
+  .speaker h2 a {
+     color: #008000;
+     text-decoration: none;
+  }
+  .speaker h2 a:hover {
+     text-decoration: underline;
+  }
+  .speaker a {
+     color: #008000;
+     text-decoration: none;
+     font-weight: bold;
+  }
+  #speaker-block {
+    margin: 0 auto;
+  }
+  #speakers {
+    max-width: 1080px;
+    text-align:center;
+    margin: 0 30px;
+  }
+  #map {
+    height: 500px;
+    margin: 30px -30px;
+  }
+
+  @media (max-width: 654px) {
+    header nav {
+      display: none;
+    }
+    .photo {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .jumbotron {
+      top: 0;
+      height: 300px;
+      margin-bottom: 0;
+    }
+    .logo {
+      top: 90px;
+    }
+    header h1 {
+      font-size: 40px;
+      top: 50px;
+    }
+    header h2 {
+      font-size: 20px;
+      top: 30px;
+    }
+    #speakers {
+      margin: 0;
+    }
+    #schedule tr {
+      position: relative;
+      display:block;
+      border-top: 1px solid #eeeeee;
+    }
+
+    #schedule td {
+      display:block;
+      border: none;
+    }
+    #schedule td .photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #schedule .hour {
+      text-align: right;
+      padding: 20px;
+      display: block;
+    }
+    #schedule img {
+      width: 80px;
+    }
+    footer h1 {
+      font-size: 35px;
+      margin: .618em 0 .618em;
+    }
+}

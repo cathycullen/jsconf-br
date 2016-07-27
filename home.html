@@ -1,210 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>JS Conf US</title>
+<title>JSConf BR 2014</title>
+<meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" rel="stylesheet">
 
 <style>
-  body {
-    font: normal 16px 'Open Sans', Arial, sans-serif;
-    color: #444;
-  }
-  a {
-   color: #008000;
-   font-weight: bold;
-    text-decoration: none;
-  }
-  header h1 {
-    font-size: 72px;
-    color: #ffffff;
-    position: relative;
-    top: 80px;
-  }
-  header h2 {
-    font-size: 30px;
-    color: #ffffff;
-    position: relative;
-    top: 45px;
-    text-transform: uppercase;
-    font-weight: 100;
-  }
-  footer h2 {
-    font-size: 31px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  footer article {
-    text-align: left;
-  }
-  h1 {
-    font-size: 48px;
-    margin: 1.236em 0 .618em;
-    font-size: 48px;
-    font-weight: 100;
-    text-align: center;
-  }
-  h3 {
-    margin: 30px 0 4px;
-    font-weight: 600;
-    font-size: 18px;
-  }
-  main section {
-    margin: 0 30px;
-    padding-bottom: 60px;
-    border-top: 1px solid #efefef;
-  }
-
-  section p, .container {
-    margin: 0 auto 17px;
-    max-width: 960px;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 25px;
-}
-
-  main section p {
-    color: #444;
-  }
-
-  li {
-    display: inline-block;
-  }
-  header nav {
-    position: fixed;
-    background: #FFF;
-    border-top: 10px solid #F5F5F5;
-    border-bottom: 1px solid #EEE;
-    text-align: center;
-    width: 100%;
-  }
-  header nav ul {
-    margin: 0 auto;
-  }
-  header nav ul li {
-    list-style: none;
-    margin: 0 25px;
-  }
-  header nav ul li a {
-    font-size: 13px;
-    text-transform: uppercase;
-    line-height: 44px;
-    text-decoration: none;
-    color: #444;
-  }
-  header nav ul li a:hover {
-    text-decoration: underline;
-  }
-  .jumbotron {
-    position: relative;
-      top: 55px;
-      margin-bottom: 55px;
-      height: 428px;
-      text-align: center;
-      background: url(images/front.jpg) center no-repeat;
-  }
-  .logo {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    top: 150px;
-    display: block;
-  }
-.green-button {
-    padding: 10px 30px;
-    color: #ffffff;
-    background: #008000;
-    font-weight: bold;
-  }
-  #tickets, #location {
-    text-align:center;
-  }
-  row:after {
-    clear:both;
-    content: "";
-    display: block;
-  }
-  footer {
-/*
-  background-position-x: -95px;
-  background-position-y: -69px;
-       background: #c5c5c5;
-  */
-     background: #000000 url("images/people.jpg") no-repeat center 25%;
-
-     color: #ffffff;
-     width: 100%;
-     padding-bottom: 8px;
-  }
-  footer section {
-    margin: 0
-    padding: 0;
-    border: none;
-  }
-  footer h1 {
-    padding-top: 20px;
-    margin: 0 0 40px;
-    text-shadow: 0 1px 3px rgba(0,0,0,.4),0 0 30px rgba(0,0,0,.075)
-  }
-
-  footer article {
-    background: rgba(0,0,0,0.7);
-    padding: 10px 0 10px 137px;
-    color:  #ffffff;
-    margin-bottom: 20px;
-  }
-  footer p {
-    color: #ffffff;
-  }
-  .gold img, .silver img {
-    margin-right: 40px;
-  }
-  .gold img {
-    width: 300px;
-  }
-  .silver img {
-    width: 240px;
-  }
-  #schedule, #schedule h2{
-    font-size: 24px;
-    font-weight: normal;
-  }
-  #schedule img {
-    width: 130px;
-  }
-  #schedule td {
-    border-top: 1px solid #EFEFEF;
-    padding: 10px;
-  }
-  #schedule a {
-    margin: 8px 0 0;
-    font-weight: 600;
-    font-size: 18px;
-  }
-
-  @media (max-width: 654px) {
-    header nav {
-      display: none;
-    }
-    .jumbotron {
-      top: 0;
-      height: 300px;
-      margin-bottom: 0;
-    }
-    .logo {
-      top: 90px;
-    }
-    header h1 {
-      font-size: 40px;
-      top: 50px;
-    }
-    header h2 {
-      font-size: 20px;
-      top: 30px;
-    }
-}
-
 </style>
 </head>
 <body>
@@ -245,145 +48,309 @@
     <section id="tickets">
       <h1>Tickets</h1>
       <p>Super Early Bird is opened!</p>
-      <a class="green-button" href="www.buytickets.html">Buy JSConfBr Tickets</a>
+        <p><a class="green-button" href="http://tix.jsconfbr.org/">Buy JSConfBr Tickets</a></p>
       <div class="divider">
       </div>
     </section>
+
     <section id="speakers">
-      <h1>Speakers</h1>
+        <div id="speaker-block">
+          <h1>Speakers</h1>
+          <div class="speaker" id="gregormartynus">
+            <img class="speaker-img" src="images/gregor_martynus.jpg" alt="">
+            <h2 class="speaker-h2" ><a href="https://twitter.com/gr2m" target="_blank">Gregor Martynus</a></h2>
+            <p class="speaker-p1">Offline First, Made Easy</p>
+            <p class="speaker-p2">Gregor is a full stack developer &amp; UX designer, questioning the status quo of what’s possible in the browser today. He created
+            <a href="http://minutes.io">minutes.io</a> and <a href="http://hood.ie/">Hoodie</a>, a JavaScript Library/Architecture that enables you to build
+            <a href="http://offlinefirst.org/">offline-capable</a> applications <a href="http://nobackend.org/">without ever thinking about the backend</a>.</p>
+            <p class="speaker-p2">He’s a founder at <a href="http://thehoodiefirm.com/">The Hoodie Firm</a>, where he tries to figure out how to fund the “Hoodie” Open
+            Source project without selling his soul. He lives with his wife in Zurich, but sometimes he&#39;s off and on the road to just
+            another <a href="http://africahacktrip.org">AfricaHackTrip</a>.
+            </p>
+          </div>
+          <div class="speaker" id="lynnfisher">
+            <img class="speaker-img" src="images/lynn_fisher.jpg" alt="">
+            <h2 class="speaker-h2"><a href="https://twitter.com/lynnandtonic" target="_blank">Lynn Fisher</a></h2>
+            <p class="speaker-p1" >Developers as Intentional Designers</p>
+            <p class="speaker-p2">Lynn Fisher is a designer and front-end developer from Chandler, Arizona, currently working with the awesome folks at &amp;yet. She can usually be found buried in a text editor or chatting excitedly about improving the way designers and developers work together.
+            </p>
+          </div>
+          <div class="speaker" id="eduardoshiota">
+            <img class="speaker-img" src="images/eduardo_shiota.jpg" alt="">
+            <h2 class="speaker-h2" ><a href="https://twitter.com/shiota" target="_blank">Eduardo Shiota</a></h2>
+            <p class="speaker-p1" >Rock the browser like it's 1983</p>
+            <p class="speaker-p2"> Started developing pages in 1998, have been working
+    with web development since 2002 and with design since 2005. I&#39;m fluent in
+    HTML, CSS and JavaScript development and hack my way through Ruby and PHP
+    whenever needed.</p>
+    <p class="speaker-p2">I graduated in Arts, so I also have skills in print, type, and web design.
+    My main design skill is crafting engaging and optimal User Experience,
+    applying Information Architecture and User-Centered Design concepts.
+            </p>
+          </div>
+          <div class="speaker" id="francisgulotta">
+            <img class="speaker-img" src="images/francis_gulotta.jpg" alt="">
+            <h2 class="speaker-h2" ><a href="https://twitter.com/reconbot" target="_blank">Francis Gulotta</a>
+            <p class="speaker-p1" >Full Stack Firmata</p>
+            <p class="speaker-p2">Francis Gulotta is a long time developer and lover of electronics. He
+    spends his days with his development team at Wizard Development and his
+    nights working on javascript robots.
+            </p>
+          </div>
+          <div class="speaker" id="timcaswell">
+            <img class="speaker-img" src="images/tim_caswell.jpg" alt="">
+            <h2 class="speaker-h2" ><a href="https://twitter.com/creationix" target="_blank">Tim Caswell</a></h2>
+            <p class="speaker-p1" ></p>
+            <p class="speaker-p2">Tim Caswell is an inventor, always looking for new ways to make life better for programmers. Tim is most well known for his early contributions to node.js as a member of the original node Illuminati that met often to plan the early stages of node’s future.  Tim has over 100 modules published to the npm registry and has authored about 300 open source projects on GitHub scattered across various organizations. Tim also teaches local programming classes in rural Texas and is currently trying to bootstrap a startup that helps more kids get into programming. He is also the creator and primary author of the community run <a href="http://howtonode.org">howtonode.org</a>.
+            </p>
+          </div>
+          <div class="speaker" id="davefurfero">
+            <img class="speaker-img" src="images/dave_furfero.jpg" alt="">
+            <h2 class="speaker-h2" ><a href="https://twitter.com/furf" target="_blank">Dave Furfero</a></h2>
+            <p class="speaker-p1" >Close Enough: Using JavaScript to Emulate the Abstract Expressionist Masterworks of Chuck Close</p>
+            <p class="speaker-p2">Dave Furfero dropped out of art school in 1993 after two professors told
+    him that he lacked the discipline required to be an artist. They were
+    right. Twenty-one years later, he is a Solutions Architect at HUGE and
+    spends his spare time teaching computers to create art for him. He is also
+    the author of the popular jQuery UI plugin Touch Punch.
+            </p>
+          </div>
+          <div class="speaker" id="jugoncalves">
+            <img class="speaker-img" src="images/ju_goncalves.jpg" alt="">
+            <h2 class="speaker-h2" ><a href="https://twitter.com/junspector" target="_blank">Jú Gonçalves</a></h2>
+            <p class="speaker-p1" >You, programming languages and the browser</p>
+            <p class="speaker-p2">Jú Gonçalves is currently a freelance Frontend Engineer and MSC candidate
+    in Computer Science. She likes to code and to discuss about coding,
+    specially JavaScript, functional paradigm and good design choices. That&#39;s
+    why she spends her free time coding some new (yet another?) UI frameworks
+    and playing around with langs that compiles to Javascript.
+            </p>
+          </div>
+          <div class="speaker" id="timpark">
+            <img class="speaker-img" src="images/tim_park.jpg" alt="">
+            <h2 class="speaker-h2" ><a href="https://twitter.com/timpark" target="_blank">Tim Park</a></h2>
+            <p class="speaker-p1" >JavaScript for all the things!</p>
+            <p class="speaker-p2">Tim is an engineer in residence at Microsoft.   He resides in
+    Silicon Valley and helps companies use open technologies on the Azure cloud
+    platform and mentors startups in Microsoft&#39;s Palo Alto Internet of Things
+    accelerator.   Before rejoining Microsoft, he was part of Nest Labs, an
+    internet of things startup focused on making the home more energy
+    efficient.   Tim aspires to start his day with a perfectly brewed cup of
+    coffee and end it with a pint of craft beer.
+            </p>
+          </div>
+          <div class="speaker" id="daviddias">
+            <img class="speaker-img" src="images/david_dias.jpg" alt="">
+            <h2 class="speaker-h2" ><a href="https://twitter.com/daviddias" target="_blank">David Dias</a></h2>
+            <p class="speaker-p1" >Securing Node apps, by the community and for the community</p>
+            <p class="speaker-p2">Passionate about security, David is one of the leaders of the Node Security
+    Project and the organizer of <a href="https://twitter.com/lxjs">@LXJS</a>, the Lisbon
+    Javascript Conference. He&#39;s currently completing a Computer Science Masters
+    degree with a focus on Peer-to-Peer networks and Cloud Computing.
+            </p>
+          </div>
+          <div class="speaker" id="bernardkobos">
+            <img class="speaker-img" src="images/bernard_kobos.jpg" alt="">
+            <h2 class="speaker-h2" ><a href="https://twitter.com/bkobos" target="_blank">Bernard Kobos</a></h2>
+            <p class="speaker-p1" >Appium</p>
+            <p class="speaker-p2">I started coding during primary school being inspired by older brothers&#39;
+    home assignments. During years I developed bigger and smaller apps in
+    various programming languages, both as professional and personal pet
+    projects. Not being satisfied with innovativeness of the tasks, I started
+    applying for fully remote positions at startup companies to work on cutting
+    edge projects which could better utilize my skill set. Currently I&#39;m
+    working in a test-centered company that strongly believes in automated
+    testing solutions. We provide infrastructure and work on making testing
+    more accessible for every developer. I&#39;ve been contributing to open source
+    projects such as: WD.js, Selenium Builder and Appium
+            </p>
+          </div>
+          <div class="speaker" id="johnpaul">
+            <img class="speaker-img" src="images/john_paul.jpg" alt="">
+            <h2 class="speaker-h2" ><a href="https://twitter.com/johnkpaul" target="_blank">John Paul</a></h2>
+            <p class="speaker-p1" >ES6 on the frontend, in the real world</p>
+            <p class="speaker-p2">John K. Paul is the VP of engineering at Penton Media and former lead
+    technical architect of Condé Nast&#39;s platform engineering team.  He is a
+    contributor to numerous open source projects including promethify,
+    requireify, jquery-ajax-retry, and js-beautify.  He is also the organizer
+    of the NYC HTML5 meetup group.
+            </p>
+          </div>
+          <div class="speaker" id="ericmann">
+            <img class="speaker-img" src="images/eric_mann.jpg" alt="">
+            <h2 class="speaker-h2" ><a href="https://twitter.com/ericmann" target="_blank">Eric Mann</a></h2>
+            <p class="speaker-p1" >Monkeys in the Machine</p>
+            <p class="speaker-p2">Eric Mann is a seasoned web developer with experience in languages from
+    JavaScript to Ruby to C# to PHP.  He has been building websites of all
+    shapes and sizes for the better part of a decade and continues to
+    experiment with new technologies and techniques.</p>
+    <p class="speaker-p2">Eric is a Senior Web Engineer at <a href="http://10up.com">10up</a> where he focuses on
+    developing high-end web solutions powered by WordPress.
+            </p>
+          </div>
+      </div>
     </section>
     <section id="schedule">
       <h1>Schedule</h1>
       <table>
         <tr>
-          <td>8:00</td>
-          <td>Registration</td>
+          <td class="hour">8:00</td>
+          <td class="event">Registration
+          </td>
+          <td></td>
         </tr>
           <tr>
-            <td>8:50</td>
-            <td>Welcome</td>
+            <td class="hour">8:50</td>
+            <td class="event">Welcome</td>
+            <td></td>
           </tr>
+          <div>
           <tr>
-            <td>9:00</td>
-            <td>
-              <h2>Developers as Intentional Designers</h2>
-              <a href="#lynnfisher">Lynn Fisher</a>
+            <td class="hour">9:00</td>
+            <td class="event">Developers as Intentional Designers
+              <h3><a href="#lynnfisher">Lynn Fisher</a></h3>
             </td>
-            <td><img src="images/lynn_fisher.jpg" alt=""></td>
-          </tr>
-          <tr>
-            <td>9:30</td>
-            <td>
-              <h2>Close Enough: Using JavaScript to Emulate the Abstract Expressionist Masterworks of Chuck Close</h2>
-              <a href="#davefurfero">Dave Furfero</a>
+            <td class="photo">
+              <a href="#lynnfisher">
+              <img src="images/lynn_fisher.jpg" alt=""><a></a>
             </td>
-            <td><img src="images/dave_furfero.jpg" alt=""></td>
+          </tr>
+        </div>
+          <tr>
+            <td class="hour">9:30</td>
+            <td class="event">Close Enough: Using JavaScript to Emulate the Abstract Expressionist Masterworks of Chuck Close
+              <h3><a href="#davefurfero">Dave Furfero</a></h3>
+            </td>
+            <td class="photo"><a href="#davefurfero"><img src="images/dave_furfero.jpg" alt=""></a></td>
           </tr>
           <tr>
-            <td>10:00</td>
-            <td>
+            <td class="hour">10:00</td>
+            <td class="event">
               <h2>The JS-Git Journey</h2>
-              <a href="#timcaswell">Tim Caswell</a>
+              <h3><a href="#timcaswell">Tim Caswell</a></h3>
             </td>
-            <td><img src="images/tim_caswell.jpg" alt=""></td>
+            <td class="photo"><a href="#timcaswell"><img src="images/tim_caswell.jpg" alt=""></a></td>
           </tr>
-            <td>10:30</td>
-            <td>Coffee-Break</td>
+            <td class="hour">10:30</td>
+            <td class="event">Coffee-Break</td>
+            <td></td>
           </tr>
           <tr>
-            <td>11:00</td>
-            <td>
+            <td class="hour">11:00</td>
+            <td class="event">
               <h2>Offline First, Made Easy</h2>
-              <a href="#greformartynus">Gregor Martynus</a>
+              <h3><a href="#greformartynus">Gregor Martynus</a></h3>
             </td>
-            <td><img src="images/gregor_martynus.jpg" alt=""></td>
+            <td class="photo"><a href="#gregormartynus"><img src="images/gregor_martynus.jpg" alt=""></a></td>
           </tr>
           <tr>
-            <td>11:30</td>
-            <td>
+            <td class="hour">11:30</td>
+            <td class="event">
               <h2>Appium</h2>
-              <a href="#bernardkobos">Bernard Kobos</a>
+              <h3><a href="#bernardkobos">Bernard Kobos</a></h3>
             </td>
-            <td><img src="images/bernard_kobos.jpg" alt=""></td>
+            <td class="photo"><a href="#bernardkobos"><img src="images/bernard_kobos.jpg" alt=""></a></td>
           </tr>
           <tr>
-            <td>12:00</td>
-            <td>
-              <h2>Monkeys in the Machine ** todo</h2>
-              <a href="#ericmann">Eric Mann</a>
+            <td class="hour">12:00</td>
+            <td class="event">
+              <h2>Monkeys in the Machine</h2>
+              <span class="tags" >webworkers</span>
+              <span class="tags" >async</span>
+              <span class="tags" >Shakespeare</span>
+              <span class="tags" >deferred</span>
+              <span class="tags" >promise</span>
+              <span class="tags" >JQuery</span>
+              <span class="tags" >magic</span>
+              <h3><a href="#ericmann">Eric Mann</a></h3>
             </td>
-            <td><img src="images/eric_mann.jpg" alt=""></td>
+            <td class="photo"><a href="#ericmann"><img src="images/eric_mann.jpg" alt=""></a></td>
           </tr>
           <tr>
-            <td>12:30</td>
-            <td>Lunch</td>
+            <td class="hour">12:30</td>
+            <td class="event">Lunch</td>
+            <td></td>
           </tr>
           <tr>
-            <td>14:30</td>
-            <td>
+            <td class="hour">14:30</td>
+            <td class="event">
               <h2>JavaScript for all the things!</h2>
-              <a href="#timpark">Tim Park</a>
+              <h3><a href="#timpark">Tim Park</a></h3>
             </td>
-            <td><img src="images/tim_park.jpg" alt=""></td>
+            <td class="photo"><a href="#timpark"><img src="images/tim_park.jpg" alt=""></a></td>
           </tr>
           <tr>
-            <td>15:00</td>
-            <td>
+            <td class="hour">15:00</td>
+            <td class="event">
               <h2>You, programming languages and the browser</h2>
-              <a href="#jugoncalves">Ju Goncalves</a>
+              <h3><a href="#jugoncalves">Ju Goncalves</a></h3>
             </td>
-            <td><img src="images/ju_goncalves.jpg" alt=""></td>
+            <td class="photo"><a href="#jugoncalves"><img src="images/ju_goncalves.jpg" alt=""></a></td>
           </tr>
           <tr>
-            <td>15:30</td>
-            <td>
+            <td class="hour">15:30</td>
+            <td class="event">
               <h2>Securing Node apps, by the community and for the community</h2>
-              <a href="#daviddias">David Dias</a>
+              <h3><a href="#daviddias">David Dias</a></h3>
             </td>
-            <td><img src="images/david_dias.jpg" alt=""></td>
+            <td class="photo"><a href="#daviddias"><img src="images/david_dias.jpg" alt=""></a></td>
           </tr>
           <tr>
-            <td>16:00</td>
-            <td>Coffee-Break</td>
+            <td class="hour">16:00</td>
+            <td class="event">Coffee-Break</td>
+            <td></td>
           </tr>
           <tr>
-            <td>16:30</td>
+            <td class="hour">16:30</td>
             <td>
               <h2>Full Stack Firmata</h2>
-              <a href="#francisgulotta">Francis Gulotta</a>
+              <h3><a href="#francisgulotta">Francis Gulotta</a></h3>
             </td>
-            <td><img src="images/francis_gulotta.jpg" alt=""></td>
+            <td class="photo"><a href="#francisgulotta"><img src="images/francis_gulotta.jpg" alt=""></a></td>
           </tr>
           <tr>
-            <td>17:00</td>
-            <td>
+            <td class="hour">17:00</td>
+            <td class="event">
               <h2>ES6 on the frontend, in the real world</h2>
-              <a href="#johnpaul">John Paul</a>
+              <span class="tags">es6</span>
+              <span class="tags">harmony</span>
+              <span class="tags">browser</span>
+              <span class="tags">jealousy</span>
+              <h3><a href="#johnpaul">John Paul</a></h3>
             </td>
-            <td><img src="images/john_paul.jpg" alt=""></td>
+            <td class="photo"><a href="#johnpaul"><img src="images/john_paul.jpg" alt=""></a></td>
           </tr>
           <tr>
-            <td>17:30</td>
-            <td>
+            <td class="hour">17:30</td>
+            <td class="event">
               <h2>Rock the browser like it's 1983</h2>
-              <a href="#eduardoshiota">Eduardo Shiota</a>
+              <span class="tags">neworder</span>
+              <span class="tags">synths</span>
+              <span class="tags">websockets</span>
+              <h3><a href="#eduardoshiota">Eduardo Shiota</a></h3>
             </td>
-            <td><img src="images/eduardo_shiota.jpg" alt=""></td>
+            <td class="photo"><a href="#eduardoshiota"><img src="images/eduardo_shiota.jpg" alt=""></a></td>
           </tr>
           <tr>
-            <td>18:00</td>
-            <td>Family Photo</td>
+            <td class="hour">18:00</td>
+            <td class="event">Family Photo</td>
+            <td></td>
           </tr>
       </table>
     </section>
     <section id="location">
       <h1>Location</h1>
-      <b>Hotel Vila Galé Fortaleza</b>
-      <p>Av. Dioguinho, 4189 - Praia do Futuro. Fortaleza/CE - Brazil</p>
+      <p><b>Hotel Vila Galé Fortaleza</b>
+        <br>
+      Av. Dioguinho, 4189 - Praia do Futuro. Fortaleza/CE - Brazil</p>
+      <div id="map">
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+        <div style='overflow:hidden;height:500px;width:1050px;'><div id='gmap_canvas' style='height:500px;width:1050px;'></div><div><small><a href="http://googlemapsgenerator.com">									embed google map							</a></small></div><div><small><a href="https://termsofservicegenerator.net">terms of service example</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+        <script type='text/javascript'>function init_map(){var myOptions = {scrollwheel: false,zoom:16,center:new google.maps.LatLng(-3.7503459,-38.4478685),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({icon: 'images/jsconfbr.png', map: map,position: new google.maps.LatLng(-3.7503459,-38.4478685)});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+      </div>
       <p>The Vila Galé Fortaleza Hotel is located on the beach only 10 minutes away from the renowned Avenida Beira-Mar, in Fortaleza.</p>
       <p>This hotel in Fortaleza features a Beach Tent as well where you can enjoy the lovely weather of North-eastern Brazil, being entitled to a bar service and all the facilities that’ll make it a great afternoon and a perfect holiday in Brazil.</p>
-
-      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:500px;width:1050px;'><div id='gmap_canvas' style='height:500px;width:1050px;'></div><div><small><a href="http://googlemapsgenerator.com">									embed google map							</a></small></div><div><small><a href="https://termsofservicegenerator.net">terms of service example</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(41.97014175273858,-87.67762554644929),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.97014175273858,-87.67762554644929)});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></section>
+    </section>
 
     <section id="papers">
     <h1>Call For Papers</h1>
@@ -392,9 +359,9 @@
     <p>If you get selected as a speaker, here's what you get:
     <p>We cover the flights and your stay at a nice Fortaleza hotel for the days of the conference. If your employer can cover your travel and hotel, we are more than happy to list them as sponsors! The money we save will be used to make the conference even better.</p>
     <p>30 minutes to present in front of the greatest audience ever: the JSConf family!</p>
-    <p><a href="" class="green-button">Call For Papers Ended (:</a></p>
+    <p><a href="#papers" class="green-button">Call For Papers Ended (:</a></p>
     <p>Let us know if you need help with anything that is not listed here, we'll be more than happy to help.</p>
-    <p>We value having a safe, family-friendly, harassment-free environment, check our code of conduct.</p>
+    <p>We value having a safe, family-friendly, harassment-free environment, check our <a href="http://confcodeofconduct.com/">code of conduct</a>.</p>
     <p>PS: crazy topics get extra points ;)</p>
     </section>
     <section id="sponsors">
@@ -405,25 +372,28 @@
         <article>
           <a href="http:www.microsoft.com"><img src="images/microsoft.png" alt=""></a>
           <a href="http:www.booking.com"><img src="images/booking.com.png" alt=""></a>
-          <a href="http:www.casamagalhaes.com"><img src="images/casamagalhaes.png" alt=""></a>
+          <a href="http:www.casamagalhaes.com.br"><img src="images/casamagalhaes.png" alt=""></a>
         </article>
         <h3>Gold</h3>
         <article class="gold">
           <a href="http:www.globo.com"><img src="images/globo.png" alt=""></a>
-          <a href="http:www.mozilla.com"><img src="images/mozilla.png" alt=""></a>
+          <a href="http:www.mozilla.com.br"><img src="images/mozilla.png" alt=""></a>
           <a href="http:www.caelum.com"><img src="images/caelum.png" alt=""></a>
-          <a href="http:www.unigex.com"><img src="images/unigex.png" alt=""></a>
+          <a href="http:www.unigex.com.br"><img src="images/unigex.png" alt=""></a>
           <a href="http:www.saucelabs.com"><img src="images/saucelabs.png" alt=""></a>
-          <a href="http:www.andyet.com"><img src="images/andyet.png" alt=""></a>
+          <a href="http:www.andyet.net"><img src="images/andyet.png" alt=""></a>
           <a href="http:www.digitalocean.com"><img src="images/digitalocean.png" alt=""></a>
         </article>
         <h3>Silver</h3>
         <article class="silver">
           <a href="http:www.sagarana.com"><img src="images/sagarana.png" alt=""></a>
-          <a href="http:www.unum.com"><img src="images/unum.png" alt=""></a>
-          <a href="http:www.grupo_fortes.com"><img src="images/grupo_fortes.png" alt=""></a>
-          <a href="http:www.alura.com"><img src="images/alura.png" alt=""></a>
-          <a href="http:www.casadocodigo.com"><img src="images/casadocodigo.png" alt=""></a>
+          <a href="http:www.unum.com.br"><img src="images/unum.png" alt=""></a>
+          <a href="http:www.grupo_fortes.com.br"><img src="images/grupo_fortes.png" alt=""></a>
+        </article>
+        <h3>Support</h3>
+        <article class="support">
+          <a href="http:www.alura.com.br"><img src="images/alura.png" alt=""></a>
+          <a href="http:www.casadocodigo.com.br"><img src="images/casadocodigo.png" alt=""></a>
           <a href="http:www.penton.com"><img src="images/penton.png" alt=""></a>
           <a href="http:www.10up.com"><img src="images/10up.png" alt=""></a>
         </article>
@@ -442,7 +412,7 @@
           <p>We are the team working hard to make this conference epic.</p>
            <p class="last">Meet the team: <a href="http://twitter.com/qmx" title="Douglas Campos">Douglas Campos</a>, <a href="http://twitter.com/campos_calebe" title="Calebe Campos">Calebe Campos</a>, <a href="http://twitter.com/cmilfont" title="Christiano Milfont">Christiano Milfont</a> and <a href="http://twitter.com/henriquegogo" title="Henrique Gogó">Henrique Gogó</a>.</p>
 
-          <p><a href="" class="green-button">@jsconfbr</a></p>
+          <p><a href="https://twitter.com/jsconfbr" class="green-button">@jsconfbr</a></p>
         </article>
     </section>
   </div>
